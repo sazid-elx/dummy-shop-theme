@@ -1,0 +1,14 @@
+{% paginate search.results by 5 %}
+  {% if search.performed %}
+    <h2>Search results</h2>
+
+    <div class="prod-holder">
+      {% for product in search.results %}
+        {% if product.object_type == 'product' %}
+          {% render 'product-item', product: product %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+  {{ paginate | default_pagination }}
+{% endpaginate %}

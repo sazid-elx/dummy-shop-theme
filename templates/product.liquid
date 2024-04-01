@@ -1,0 +1,91 @@
+<div class="pdp-page gap-16">
+  <div class="pdp-gallery">
+    <div class="featured-img">
+      <button class="slide-btn" id="prev">&#8249;</button>
+      <img src="{{ product.featured_image | image_url }}" height="400" width="400">
+      <button class="slide-btn" id="next">&#8250;</button>
+    </div>
+
+    {% if product.images %}
+      <div class="flex flex-wrap gap-8">
+        {% for image in product.images %}
+          <img src="{{ image | image_url }}" height="125" width="125">
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="flex flex-col gap-8">
+    <h1>{{ product.title }}</h1>
+    <p>{{ product.price | money_with_currency }}</p>
+    <p>Company : {{ product.vendor }}</p>
+    {% if product.description %}
+      <div>
+        {{ product.description }}
+      </div>
+    {% endif %}
+
+    {% form 'product', product %}
+      <input id="product-id" type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+      <div class="product-option">
+        {% for option in product.options_with_values %}
+          <fieldset>
+            <legend>{{ option.name }}</legend>
+            {% for value in option.values %}
+              <div>
+                <input
+                  type="radio"
+                  name="option[{{ option.name }}]"
+                  {% if option.selected_value == value %}
+                    checked
+                  {% endif %}
+                  id="{{ option.name  }}-{{ value  }}"
+                  value="{{ value }}"
+                >
+                <label for="{{ option.name  }}-{{ value  }}">{{ value }}</label>
+              </div>
+            {% endfor %}
+          </fieldset>
+        {% endfor %}
+
+        <button class="b-w-btn wide" type="submit">Add to cart</button>
+      </div>
+    {% endform %}
+  </div>
+</div>
+
+<script>
+  let product = {{ product | json }}
+  document.querySelectorAll('.product-option input[type="radio"]').forEach((input) => {
+    input.addEventListener('change', () => {
+      let selectedOption = [];
+      document.querySelectorAll('.product-option input[type="radio"]:checked').forEach((radio) => {
+        selectedOption.push(radio.value);
+      })
+
+      let matchedVariant = product.variants.find((variant) => {
+          let pass = true;
+          for (let i = 0; i < selectedOption.length; i++) {
+            if(selectedOption.indexOf(variant.options[i]) == -1) {
+              pass = false;
+              break;
+            }
+          }
+
+          return pass
+        })
+
+
+
+      var productInput = document.querySelector('#product-id');
+
+      if (productInput) {
+        productInput.value = matchedVariant.id;
+      } else {
+        console.error("Element with id 'product-id' not found.");
+      }
+    })
+
+  })
+</script>

@@ -1,0 +1,12 @@
+<div class="product-card">
+  <a href="{{ product.url }}" class="prod-link">
+    <p class="prod-title">{{ product.title }}</p>
+    <img src="{{ product.featured_image | image_url }}" height="200" width="200">
+    <p>{{ product.price | money_with_currency }}</p>
+    <p>{{ product.vendor }}</p>
+  </a>
+  <script>
+    {% comment %} console.log('{{ product | json }}'); {% endcomment %}
+    {% comment %} console.debug('{{ product.price }}'); {% endcomment %}
+  </script>
+</div>

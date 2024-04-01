@@ -1,0 +1,11 @@
+<h1>{{ blog.title }}</h1>
+
+{% for post in blog.articles %}
+  <div>
+    <a href="{{ post.url }}">
+      <h2>{{ post.title }}</h2>
+      <h3>{{ post.author }}</h3>
+      <p>{{ post.excerpt }}</p>
+    </a>
+  </div>
+{% endfor %}

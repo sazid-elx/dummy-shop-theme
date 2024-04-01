@@ -1,0 +1,41 @@
+.pdp-page {
+  display: flex;
+}
+.pdp-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .pdp-page {
+    flex-direction: column;
+  }
+
+  .pdp-gallery {
+    align-items: center;
+  }
+}
+
+.featured-img {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.featured-img img {
+  object-fit: cover;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+.slide-btn#next {
+  right: 0;
+}

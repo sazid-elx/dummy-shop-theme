@@ -1,0 +1,21 @@
+<h3>Products from {{ collections.frontpage.title }}</h3>
+<div class="prod-holder">
+  {% for product in collections.frontpage.products %}
+    {% render 'product-item', product: product %}
+  {% endfor %}
+</div>
+
+<h3>Products from {{ collections['automated-collection'].title }}</h3>
+
+<div class="prod-holder">
+  {% for product in collections['automated-collection'].products %}
+    {% render 'product-item', product: product %}
+  {% endfor %}
+</div>
+
+<h3>Products from {{ collections.hydrogen.title }}</h3>
+<div class="prod-holder">
+  {% for product in collections.hydrogen.products %}
+    {% render 'product-item', product: product %}
+  {% endfor %}
+</div>
