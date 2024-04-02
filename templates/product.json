@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "product": {
+      "type": "product",
+      "settings": {}
+    }
+  },
+
+  "order": ["product"]
+}

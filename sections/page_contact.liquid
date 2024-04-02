@@ -1,6 +1,6 @@
 <h1>{{ page.title }}</h1>
 
-<div>
+<div class="flex flex-col gap-16">
   {{ page.content }}
 
   {% form 'contact' %}
@@ -16,8 +16,6 @@
       <textarea name="contact[body]" id="message"></textarea>
     </div>
 
-    <div class="submit">
-      <input type="submit" value="Create">
-    </div>
+    <button class="b-w-btn short">Send</button>
   {% endform %}
 </div>
