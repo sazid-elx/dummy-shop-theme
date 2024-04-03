@@ -1,11 +1,11 @@
-{% render 'individual_collection',
+{% render 'suggest_collection',
   collection_handle: section.settings.collection_handle,
   title: section.settings.suggested_prod_title
 %}
 
 {% schema %}
 {
-  "name": "Suggest Hydrozen Prods",
+  "name": "Suggest Collection",
   "settings": [
     {
       "type": "text",
@@ -20,7 +20,7 @@
   ],
   "presets": [
     {
-      "name": "suggest_hydrozen_prods"
+      "name": "suggest_prods"
     }
   ]
 }
