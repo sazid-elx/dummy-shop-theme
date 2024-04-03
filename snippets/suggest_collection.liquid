@@ -3,10 +3,7 @@
 
   <div class="flex justify-between">
     <h3>{{ title }}</h3>
-    {%
-      assign collection = collections[    <p>{{ collection_handle }}</p>
-      ]
-    %}
+    {% assign collection = collections[collection_handle] %}
     {% if collection.products.size > 4 %}
       {{ 'Show More' | link_to: collection.url, class: 'link-txt' }}
     {% endif %}
