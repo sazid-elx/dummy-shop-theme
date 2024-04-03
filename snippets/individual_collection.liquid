@@ -1,19 +1,18 @@
 <div class="individual-collection" id="{{ section.id }}">
   <div class="flex justify-between">
-    <h3>{{ title }}</h3>
-    {% if collections[collection_handle].products.size > 4 %}
-      {{- 'Show More' | link_to: collections[collection_handle].url, class: 'link-txt' }}
+    <h3><span>Products from</span> {{ collections.title }}</h3>
+    {% if collections.products.size > 4 -%}
+      {{- 'Show More' | link_to: collections.url, class: 'link-txt' }}
     {% endif %}
   </div>
   <div class="prod-holder">
-    {% for product in collections[collection_handle].products limit: 4 %}
+    {% for product in collections.products limit: 4 %}
       {% render 'product-item', product: product %}
     {% endfor %}
   </div>
 </div>
-
 <script>
-  console.log('{{ collections | json}}')
+    // console.log('{{ collections | json}}')
   //   function handleSeeAll(collectionId) {
   //   window.location.href = "/collections/" + collectionId;
   // }
