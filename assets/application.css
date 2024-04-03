@@ -1,3 +1,7 @@
+#admin-bar-iframe {
+  display: none;
+}
+
 .title {
   text-align: center;
   font-size: 24px;
@@ -50,7 +54,7 @@
 }
 
 .product-card {
-  width: 300px;
+  width: 320px;
   padding: 12px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -75,4 +79,21 @@
 }
 button {
   cursor: pointer;
+}
+
+.link-txt {
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.link-txt:hover {
+  color: blue;
+}
+
+.bg-white {
+  background: #fff;
+}
+.bg-white * {
+  background: #fff;
 }

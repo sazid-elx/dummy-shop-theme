@@ -1,9 +1,4 @@
 {
-  "sections": {
-    "cart": {
-      "type": "cart",
-      "settings": {}
-    }
-  },
+  "sections": { "cart": { "type": "cart", "settings": {} } },
   "order": ["cart"]
 }

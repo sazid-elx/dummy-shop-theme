@@ -14,19 +14,22 @@
 }
 .nav-items a {
   text-decoration: none;
-  color: #1f0737;
+  color: #000;
   font-weight: 600;
   font-size: 18px;
   transition: font-size 0.3s ease;
 }
 
 .nav-items li .active {
-  color: #1b25df !important;
+  color: #fff;
+  background: #000;
+  padding: 8px;
 }
 
 .nav-items a:hover {
-  color: #5316a3;
-  font-size: 19px;
+  color: #fff;
+  background: #000;
+  padding: 8px;
 }
 
 .nav-items li {

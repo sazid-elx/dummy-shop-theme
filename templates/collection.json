@@ -1,9 +1,8 @@
 {
   "sections": {
-    "collection": {
-      "type": "collection",
-      "settings": {}
-    }
+    "collection": { "type": "collection", "settings": {} },
+    "article_yPGrJ3": { "type": "article", "settings": {} },
+    "article_bUVFEw": { "type": "article", "settings": {} }
   },
-  "order": ["collection"]
+  "order": ["collection", "article_yPGrJ3", "article_bUVFEw"]
 }

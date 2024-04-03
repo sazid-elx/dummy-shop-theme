@@ -7,5 +7,6 @@
       "label": "Page background",
       "default": "#FFFFFF"
     }
-  ]
+  ],
+  "current": {}
 }

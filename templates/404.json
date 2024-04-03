@@ -1,12 +1,4 @@
 {
-    "sections":{
-        "404": {
-            "type": "404-content",
-            "settings":{
-
-            }
-
-        }
-    },
-    "order": ["404"]
+  "sections": { "404": { "type": "404-content", "settings": {} } },
+  "order": ["404"]
 }

@@ -1,10 +1,10 @@
 {
   "sections": {
-    "product": {
-      "type": "product",
+    "product": { "type": "product", "settings": {} },
+    "suggest_hydrozen_prods_q6XNE7": {
+      "type": "suggest_hydrozen_prods",
       "settings": {}
     }
   },
-
-  "order": ["product"]
+  "order": ["product", "suggest_hydrozen_prods_q6XNE7"]
 }
