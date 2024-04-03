@@ -7,6 +7,9 @@
     },
     "suggest_hydrozen_prods_q6XNE7": {
       "type": "suggest_hydrozen_prods",
+      "custom_css": [
+        "{margin-top: 80px;}"
+      ],
       "settings": {
         "collection_handle": "hydrogen",
         "suggested_prod_title": "Products you may like"
