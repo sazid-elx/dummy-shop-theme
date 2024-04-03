@@ -9,9 +9,7 @@
   </div>
   <div class="prod-holder">
     {% for product in collections[collection_handle].products %}
-      {% if product.collections contains collection_handle %}
-        {% render 'product-item', product: product %}
-      {% endif %}
+      {% render 'product-item', product: product %}
     {% endfor %}
   </div>
 </div>
