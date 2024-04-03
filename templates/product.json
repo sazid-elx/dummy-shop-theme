@@ -9,7 +9,7 @@
       "type": "suggest_hydrozen_prods",
       "settings": {
         "collection_handle": "hydrogen",
-        "suggested_prod_title": "Producto"
+        "suggested_prod_title": "Products you may like"
       }
     }
   },
