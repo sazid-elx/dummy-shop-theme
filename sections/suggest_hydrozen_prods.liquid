@@ -1,4 +1,7 @@
-{% render 'individual_collection', collections: collections.hydrogen %}}
+{% render 'individual_collection',
+  collection_handle: section.settings.collection_handle,
+  title: section.settings.suggested_prod_title
+%}
 
 {% schema %}
 {
