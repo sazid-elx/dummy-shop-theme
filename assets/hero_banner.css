@@ -1,5 +1,14 @@
 .hero-banner {
   height: 600px;
-  background-position: fill;
-  z-index: 999;
+  background-position: center;
+  background-size: cover;
+  position: relative; /* Add this line */
+}
+
+.hero-banner h1 {
+  position: absolute; /* Add this line */
+  top: 50%; /* Add this line */
+  left: 50%; /* Add this line */
+  transform: translate(-50%, -50%); /* Add this line */
+  color: white; /* Example color for the text */
 }
