@@ -1,6 +1,7 @@
 <div
   class="hero-banner"
-  style=background-image: url('https:{{ section.settings['hero-banner'] | img_url: 'master' }}');
+  style="background-image:"
+  url({{ section.settings['hero-banner'] | img_url: 'master' }});
 >
   <script>
     console.log('{{ section.settings['hero-banner'] }}')
