@@ -2,8 +2,12 @@
   "sections": {
     "hero_banner_twtax6": {
       "type": "hero_banner",
+      "custom_css": [
+        "h1{left: auto}"
+      ],
       "settings": {
-        "hero-banner": "shopify:\/\/shop_images\/Bank_Holidays__2024.png"
+        "hero-banner": "shopify:\/\/shop_images\/Bank_Holidays__2024.png",
+        "banner-text": "khela hobe onek"
       }
     },
     "index": {
