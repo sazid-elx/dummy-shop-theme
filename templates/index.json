@@ -12,6 +12,9 @@
     },
     "index": {
       "type": "index",
+      "custom_css": [
+        "h2{margin: 0 auto}"
+      ],
       "settings": {
       }
     }
