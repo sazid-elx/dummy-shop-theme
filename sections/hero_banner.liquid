@@ -3,3 +3,15 @@
     <img src="{{ section.settings.hero-banner | img_url: 'master' }}" alt="Hero Banner Image">
   {% endif %}
 </div>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [],
+   "presets": [
+    {
+      "name": "hero_banner"
+    }
+]
+}
+{% endschema %}
