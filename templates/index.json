@@ -1,4 +1,19 @@
 {
-  "sections": { "index": { "type": "index", "settings": {} } },
-  "order": ["index"]
+  "sections": {
+    "hero_banner_twtax6": {
+      "type": "hero_banner",
+      "settings": {
+        "hero-banner": "shopify:\/\/shop_images\/Bank_Holidays__2024.png"
+      }
+    },
+    "index": {
+      "type": "index",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero_banner_twtax6",
+    "index"
+  ]
 }

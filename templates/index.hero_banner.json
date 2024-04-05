@@ -1,12 +1,12 @@
 {
   "sections": {
-    "index": {
+    "hero_banner": {
       "type": "hero_banner",
       "settings": {
       }
     }
   },
   "order": [
-    "index"
+    "hero_banner"
   ]
 }

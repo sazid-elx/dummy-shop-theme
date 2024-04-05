@@ -1,6 +1,11 @@
 <div class="hero-banner">
   {% if section.settings['hero-banner'] != 'none' %}
-    <img src="{{ section.settings.hero-banner | img_url: 'master' }}" alt="Hero Banner Image">
+    <img
+      src="{{ section.settings.hero-banner | img_url: 'master' }}"
+      width="100%"
+      height="100%"
+      alt="Hero Banner Image"
+    >
   {% endif %}
 </div>
 
