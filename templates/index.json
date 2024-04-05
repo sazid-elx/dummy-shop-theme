@@ -3,7 +3,7 @@
     "hero_banner_twtax6": {
       "type": "hero_banner",
       "custom_css": [
-        "h1{left: auto}"
+        "h1 {margin:0 auto;}"
       ],
       "settings": {
         "hero-banner": "shopify:\/\/shop_images\/Bank_Holidays__2024.png",
