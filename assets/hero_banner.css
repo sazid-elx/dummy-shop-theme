@@ -2,11 +2,11 @@
   height: 600px;
   background-position: center;
   background-size: cover;
-  position: relative; /* Add this line */
+  position: relative;
 }
 
 .hero-banner h1 {
-  position: absolute; /* Add this line */
+  position: absolute;
   background-color: unset;
   color: white;
 }
