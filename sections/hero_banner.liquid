@@ -1,2 +1,5 @@
-{ "name": "Hero Banner", "presets": [ { "name": "hero_banner" } ], "settings": [ { "type": "image_picker", "id":
-"hero-banner", "default": "none", "label": "Banner Picker" } ] }
+<div class="hero-banner">
+  {% if section.settings['hero-banner'] != 'none' %}
+    <img src="{{ section.settings.hero-banner | img_url: 'master' }}" alt="Hero Banner Image">
+  {% endif %}
+</div>
