@@ -7,6 +7,6 @@
 
 .hero-banner h1 {
   position: absolute; /* Add this line */
-  background-color: none;
+  background-color: unset;
   color: white;
 }
