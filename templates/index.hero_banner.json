@@ -1,7 +1,7 @@
 {
   "sections": {
     "index": {
-      "type": "index",
+      "type": "hero_banner",
       "settings": {
       }
     }
