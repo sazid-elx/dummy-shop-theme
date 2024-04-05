@@ -1,4 +1,5 @@
 .hero-banner {
   height: 600px;
   background-position: fill;
+  z-index: 999;
 }
