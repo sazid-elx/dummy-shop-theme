@@ -1,3 +1,5 @@
 .hero-banner {
   height: 600px;
+  background-position: center;
+  contain: cover;
 }
